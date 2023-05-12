@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+testOUT filter=lfs diff=lfs merge=lfs -text
+testOUT_filtered30 filter=lfs diff=lfs merge=lfs -text
+OUTMSA.MSA filter=lfs diff=lfs merge=lfs -text
+OUTMSA.MSA_filtered100000 filter=lfs diff=lfs merge=lfs -text
