@@ -1,0 +1,5 @@
+in /zfs/smblab/group_software/Miniconda/miniconda3/envs/FRET_design/lib/python3.8/site-packages/fretraj/cloud.py
+line 887:
+self.attach_id_mdtraj = labels["Position"][site]["attach_id"] - 1
+to
+self.attach_id_mdtraj = [i.serial==(labels["Position"][site]["attach_id"] - 1) for i in self.structure.top.atoms].index(True)
