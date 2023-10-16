@@ -93,6 +93,8 @@ printf "\nhmmearch completed!\n"
 
 printf "\nConverting output to AFA.\n"
 
+cp get_alignments_tempfile1 get_alignments_tempfile1_preConverted
+
 #runs esl-reformat
 /zfs/smblab/group_software/HMMER/hmmer-3.3.2/easel/miniapps/esl-reformat -o $outputFileName afa get_alignments_tempfile1
 
@@ -100,10 +102,10 @@ printf "\nConversion complete!\n"
 
 printf "\nFiltering output...\n"
 
-python /home/ghamil4/FRET_Design/DCAscript/filter_pfam_args.py $outputFileName $maxGaps
+python /zfs/smblab/fduffy/source/repos/FRETNet-Designer/filter_pfam_args.py $outputFileName $maxGaps
 
 printf "\nDone filtering output!\n"
 
-rm get_alignments_tempfile1
-rm get_alignments_tempfile2
+#rm get_alignments_tempfile1
+#rm get_alignments_tempfile2
 
