@@ -51,7 +51,9 @@ elif [ "$whichDatabase" = "no" ]; then
 elif [ "$whichDatabase" = "pfam" ]; then
 	database="/zfs/smblab/group_software/HMMER/db/Pfam-A.fasta.gz"
 elif [ "$whichDatabase" = "pdz" ]; then
-        database="/zfs/smblab/group_software/HMMER/db/PDZ12_complete.fasta"
+	database="/zfs/smblab/group_software/HMMER/db/PDZ12_complete.fasta"
+elif [ "$whichDatabase" = "pbpd" ]; then
+	database="/zfs/smblab/group_software/HMMER/db/PF13407.alignment.full_reformat.fasta.gz"
 else
 	printf "\nYou did not enter either "yes" or "no", closing program.\n"
 	exit
@@ -104,6 +106,6 @@ python /home/ghamil4/FRET_Design/DCAscript/filter_pfam_args.py $outputFileName $
 
 printf "\nDone filtering output!\n"
 
-rm get_alignments_tempfile1
-rm get_alignments_tempfile2
+#rm get_alignments_tempfile1
+#rm get_alignments_tempfile2
 
