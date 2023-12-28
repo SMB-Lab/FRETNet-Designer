@@ -3,6 +3,8 @@ The following will create an environment and allow it to be displayed in the jup
 conda create --name myenv_3_8FT python=3.8.0
 conda activate myenv_3_8_FT or source activate myenv_3_8_FT if on Palmetto
 conda install jupyter
+# create a new kernel so that  you can switch between different Jupyter kernels representing different Conda environments without 
+# needing to restart the Jupyter Notebook server
 python -m ipykernel install --user --name python_custom --display-name "<name of your env>"
 packages needed (* need to be installed, as they aren't defaults in conda installs)
 numpy*
