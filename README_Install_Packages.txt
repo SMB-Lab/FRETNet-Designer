@@ -1,5 +1,6 @@
 Create a conda environment within which to run the script. This assumes you have a conda install capable of installing Py3.8.0 (what was used here)
-The following will create an environment and allow it to be displayed in the jupyterlab kernel selection window. Creating a new kernel associated with the new conda environment will allow you to switch between environments without restarting the jupyter server.
+The following will create an environment and allow it to be displayed in the jupyterlab kernel selection window. Creating a new kernel
+associated with the new conda environment will allow you to switch between environments without restarting the jupyter server.
 
 conda create --name myenv_3_8FT python=3.8.0
 conda activate myenv_3_8_FT or source activate myenv_3_8_FT if on Palmetto
