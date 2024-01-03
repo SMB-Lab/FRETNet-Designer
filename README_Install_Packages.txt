@@ -1,21 +1,29 @@
-Create a conda environment within which to run the script. This assumes you have a conda install capable of installing Py3.8.0 (what was used here)
-The following will create an environment and allow it to be displayed in the jupyterlab kernel selection window. Creating a new kernel
-associated with the new conda environment will allow you to switch between environments without restarting the jupyter server.
+Setup instructions:
 
-conda create --name myenv_3_8FT python=3.8.0
-conda activate myenv_3_8_FT or source activate myenv_3_8_FT if on Palmetto
-conda install jupyter
-python -m ipykernel install --user --name python_custom --display-name "<name of your env>"
-packages needed (* need to be installed, as they aren't defaults in conda installs)
-numpy*
-pandas*
-matplotlib*
-json       
-mdtraj*
-fretraj*
-copy
+1. Create a conda environment with python 3.8 within which to run the notebook.
+    $ conda create --name myenv_3_8FT python=3.8.0
+    
+2. Activate the environment.
+    conda activate myenv_3_8_FT or source activate myenv_3_8_FT if on Palmetto
+
+3. Install jupyter in the new environment.
+    $ conda install jupyter
+
+4. Creating a new kernel associated with the new environment which will allow you run the notebook in the env.
+    $ python -m ipykernel install --user --name python_custom --display-name "<name of your env>"
+
+5. Install the required python packages in the environment.
+    $ python -m pip install numpy==1.24.4
+    $ python -m pip install pandas==2.0.3
+    $ python -m pip install matplotlib==3.7.4
+    $ python -m pip install mdtraj==1.9.9
+    $ python -m pip install fretraj==0.2.10
+    $ python -m pip install json==2.0.9
 
 
+
+
+# when Frank tried the following instructions, they did not work. matplotlib was installed with an outdated version which used np.float.
 installed in this order:
 conda install numpy
 conda install pandas
