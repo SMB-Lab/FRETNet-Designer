@@ -1,6 +1,6 @@
 .ipynb_checkpoints/
 *.pyc
 *.pkl
-*.pdb
+!repo/test/inputs/*.pbd
 *.xyz
  
