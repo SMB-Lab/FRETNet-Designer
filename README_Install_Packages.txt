@@ -4,7 +4,7 @@ Setup instructions:
     $ conda create --name myenv_3_8FT python=3.8.0
     
 2. Activate the environment.
-    conda activate myenv_3_8_FT or source activate myenv_3_8_FT if on Palmetto
+    $ conda activate myenv_3_8_FT or source activate myenv_3_8_FT if on Palmetto
 
 3. Install jupyter in the new environment.
     $ conda install jupyter
