@@ -18,12 +18,7 @@ Setup instructions:
     $ python -m pip install matplotlib==3.7.4
     $ python -m pip install mdtraj==1.9.9
     $ python -m pip install fretraj==0.2.10
-
-6. Directory Configuration
-   Before running the Jupyter Notebook, make sure to update the YAML file (`config.yaml`) with the correct directory paths. Follow these steps:
-   a. Open the `config.yaml` file in a text editor.
-   b. Locate the section containing directory paths (e.g., `work_directory`, `output_directory`, etc.).
-   c. Update each path according to your local machine or project structure. Ensure that you provide the correct absolute paths.
+    $ python -m pip install json==2.0.9
 
 
 
